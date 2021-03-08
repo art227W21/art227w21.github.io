@@ -1,0 +1,63 @@
+---
+###
+# note: will result in an all-in-one-file stylesheet e.g. style.css
+#   in _config.yml add:
+#     sass:
+#       sass_dir: css
+#       style:    expanded
+---
+
+@import url('https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap');
+@import 'settings';
+@import 'bootstrap/bootstrap.scss';
+
+/*
+ * css styles go here
+ */
+
+body {
+  font-family: $font-family;
+}
+
+a, a:visited {
+  color: $link-color;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+#header {
+  padding: 4px;
+  font-family: 'Gravitas One', cursive;
+  background-color: red;
+}
+
+.big {
+  font-size:   200%;
+  font-weight: bold;
+}
+
+.small {
+  font-size:    90%;
+  color:        grey;
+  padding-left: 15px;
+}
+
+#nav {
+  padding: 6px;
+}
+
+#content {
+  height: 100vh;
+}
+
+#footer {
+  font-family: 'Gravitas One', cursive;
+  background-color: red;
+  padding: 4px;
+}
