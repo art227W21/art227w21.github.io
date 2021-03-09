@@ -6,18 +6,51 @@
   <title> - OUR SOCIAL INTERWEB</title>
 
   <link rel="stylesheet" href="/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link type="text/css" rel="stylesheet" href="css/jquery.jConveyorTicker.css" />
 </head>
 
 
 <body>
 
 
+<script>
+  $(function() {
+    $('.js-conveyor-1').jConveyorTicker({
+      forced_loop: 1
+    });
+  });
+</script>
+
 <div class="fixed-top">
 <div id="header">
   <div class='big d-flex justify-content-center'>OUR SOCIAL INTERWEB</div>
 </div>
 
-
+<div class='ticker'>
+  <div class='js-conveyor-1'>
+    <ul>
+      <li>
+        <span>e. benji</span>
+      </li>
+      <li>
+        <span>Alexandro Ponce</span>
+      </li>
+      <li>
+        <span>Mohabbat Khatibnia-Mansouri</span>
+      </li>
+      <li>
+        <span>Alex McAdam</span>
+      </li>
+      <li>
+        <span>Alyx Loney</span>
+      </li>
+      <li>
+        <span>Francie Lefebvre</span>
+      </li>
+    </ul>
+  </div>
+</div>
 <!-- <div id="nav">
 
   
@@ -48,7 +81,7 @@
 </div> -->
 </div> 
 
-<div id="content" style="margin-left:-70px;">
+<div id="content">
   <style type="text/css" media="screen">
   .container {
     margin: 10px auto;
@@ -72,9 +105,9 @@
 
 </div>
 
-
-<div id="footer" class="fixed-bottom d-flex justify-content-center">
-  <div class='big'>ART227 INTERNATIONAL ART SHOW</div>
+<div id="footer" class="fixed-bottom justify-content-center">
+  <div id='about'><span>PSU Intro to Art and Social Practice winter-2021 class facilitated by Illia Yakovenko</span></div>
+  <div id='subtitle'>ART227 INTERNATIONAL ART SHOW</div>
 </div>
 
 

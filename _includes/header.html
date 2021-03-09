@@ -1,10 +1,41 @@
 
+<script>
+  $(function() {
+    $('.js-conveyor-1').jConveyorTicker({
+      forced_loop: 1
+    });
+  });
+</script>
+
 <div class="fixed-top">
 <div id="header">
   <div class='big d-flex justify-content-center'>{{ site.title }}</div>
 </div>
 
-
+<div class='ticker'>
+  <div class='js-conveyor-1'>
+    <ul>
+      <li>
+        <span>e. benji</span>
+      </li>
+      <li>
+        <span>Alexandro Ponce</span>
+      </li>
+      <li>
+        <span>Mohabbat Khatibnia-Mansouri</span>
+      </li>
+      <li>
+        <span>Alex McAdam</span>
+      </li>
+      <li>
+        <span>Alyx Loney</span>
+      </li>
+      <li>
+        <span>Francie Lefebvre</span>
+      </li>
+    </ul>
+  </div>
+</div>
 <!-- <div id="nav">
 {% for item in site.nav %}
   {% if item.href contains 'http' %}
